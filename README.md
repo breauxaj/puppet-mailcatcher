@@ -10,6 +10,15 @@ Samples
 include mailcatcher
 ```
 ```
+mailcatcher::config { 'default':
+  ip        =>
+  smtp_ip   =>
+  smtp_port =>
+  http_ip   =>
+  http_port =>
+}
+```
+```
 mailcatcher::service { 'default': ensure => running, enable => true }
 ```
 
