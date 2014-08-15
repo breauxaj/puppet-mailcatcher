@@ -10,7 +10,7 @@ Samples
 include mailcatcher
 ```
 ```
-mailcatcher::config { 'default': ip => '192.168.1.25' }
+mailcatcher::config { 'default': http_ip => '192.168.1.25' }
 ```
 ```
 mailcatcher::service { 'default': ensure => running, enable => true }
