@@ -4,9 +4,6 @@
 #
 # Parameters:
 #
-#  ip:
-#    Set the ip address of both servers
-#
 #  smtp_ip:
 #    Set the ip address of the smtp server
 #
@@ -26,14 +23,13 @@
 #
 # Sample Usage:
 #
-#  To set the listen ip for both servers, use:
+#  To set the listen ip for the http server, use:
 #
 #    mailcatcher::config { 'default':
-#      ip => '192.168.1.25'
+#      http_ip => '192.168.1.25'
 #    }
 #
 define mailcatcher::config (
-  $ip = '127.0.0.1',
   $smtp_ip = '127.0.0.1',
   $smtp_port = '1025',
   $http_ip = '127.0.0.1',
